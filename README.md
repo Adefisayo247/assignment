@@ -99,7 +99,8 @@ https://adefisayo247.github.io/responsive-markup/responsive%20markup/index.html
 //CODEALONG FOR 2020 MODULE THREE OBJECTS
 https://adefisayo247.github.io/module3-object/
 
-//Creating my Higher-Order Function
+
+# # Creating my Higher-Order Function
 
 ```
 const footballTeams = [
@@ -224,6 +225,7 @@ Execute a specified block of code once after a specified time has elapsed.
 A function to run, or a reference to a function defined elsewhere. A number representing the time interval in milliseconds (1000 milliseconds equals 1 second) to wait before executing the code. If you specify a value of 0 (or omit the value), the function will run as soon as possible. (See the note below on why it runs "as soon as possible" and not "immediately".) More on why you might want to do this later. Zero or more values that represent any parameters you want to pass to the function when it is run.
 As a consequence, code like setTimeout(fn, 0) will execute as soon as the stack is empty, not immediately. If you execute code like setTimeout(fn, 0) but then immediately after run a loop that counts from 1 to 10 billion, your callback will be executed after a few seconds.
 
+```
 // With a named function
 let myGreeting = setTimeout(function sayHi() {
   alert('Hello, Mr. Universe!');
@@ -236,14 +238,15 @@ function sayHi() {
 
 let myGreeting = setTimeout(sayHi, 2000);
 
+```
 # # Explain promises with examples
 A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
 
 A Promise is in one of these states:
 
-pending: initial state, neither fulfilled nor rejected.
-fulfilled: meaning that the operation was completed successfully.
-rejected: meaning that the operation failed. A pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options happens, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
+*pending: initial state, neither fulfilled nor rejected.
+*fulfilled: meaning that the operation was completed successfully.
+*rejected: meaning that the operation failed. A pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options happens, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
 
 As the Promise.prototype.then() and Promise.prototype.catch() methods return promises, they can be chained.
 
@@ -289,4 +292,6 @@ function say(x) {
     return x;
 }
 ```
+
+
 
